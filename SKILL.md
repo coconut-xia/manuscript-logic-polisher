@@ -71,12 +71,16 @@ When the author corrects the map, update it and repeat the gate only for unresol
 
 After logic confirmation, read [references/exemplar-style-learning.md](references/exemplar-style-learning.md). Copy [assets/style-profile-template.md](assets/style-profile-template.md) when the profile should persist across tasks or be tracked in Git.
 
+If [references/author-exemplar-style-profile.md](references/author-exemplar-style-profile.md) exists, read it before analyzing new exemplars or revising text for this author. Treat it as a living, provenance-tracked profile: merge new evidence into it, preserve explicit user weighting, and keep unsupported section profiles marked incomplete.
+
+For drafting or revising an Introduction for this author, also read [references/author-introduction-style.md](references/author-introduction-style.md). Prioritize its paragraph-level argument architecture over isolated wording from any exemplar.
+
 1. Check exemplar fit by field, article type, section type, target journal, and publication quality. Down-weight mismatched examples.
 2. Extract recurring rhetorical and linguistic patterns, including paragraph moves, topic-sentence placement, information flow, transition functions, stance, hedging, voice, sentence rhythm, terminology, and claim strength.
 3. Separate section-specific patterns. Do not apply Methods conventions to an Abstract or Discussion.
 4. Record both preferred patterns and patterns to avoid.
 5. Support profile claims with aggregate observations from multiple exemplars where possible. Mark single-paper observations as provisional.
-6. Use `scripts/analyze_exemplars.py` for optional surface statistics on UTF-8 English `.txt`, `.md`, or `.tex` files. Treat its output as diagnostic evidence, not as a style decision.
+6. For LaTeX exemplars, run `scripts/extract_latex_sections.py` first to separate prose by section and remove tables, equations, and layout commands. Then use `scripts/analyze_exemplars.py` for optional surface statistics on the extracted UTF-8 text. Treat all statistics as diagnostic evidence, not as style decisions.
 7. Save only the derived profile in the skill/project by default; keep full copyrighted exemplar articles outside the skill repository unless the user intentionally chooses to version them.
 
 ## Stage 5: Revise the confirmed manuscript
@@ -89,7 +93,7 @@ Apply three passes in order:
 2. **Paragraph pass**: give each paragraph one controlling purpose; create a clear topic sentence, evidence or reasoning sequence, interpretation, and forward link where appropriate.
 3. **Sentence pass**: improve precision, concision, grammar, terminology, transitions, information flow, hedging, and journal fit using the derived style profile.
 
-During the sentence pass, read [references/natural-academic-language.md](references/natural-academic-language.md). Use transitions only when they express a real logical relation. Prefer explicit nouns and verbs over vague references or decorative academic wording. Combine short, medium, and selectively longer sentences according to rhetorical purpose. Preserve a useful authorial voice rather than homogenizing every sentence.
+During the sentence pass, read [references/natural-academic-language.md](references/natural-academic-language.md) and apply the persistent author profile when available. Use transitions only when they express a real logical relation. Prefer explicit nouns and verbs over vague references or decorative academic wording. Combine short, medium, and selectively longer sentences according to rhetorical purpose. Preserve a useful authorial voice rather than homogenizing every sentence.
 
 For claims requiring missing evidence, insert a visible author query such as `[AUTHOR QUERY: evidence needed for ...]`; never repair the gap by fabrication. If the confirmed logic requires scientific content that the author has not supplied, pause only that passage and continue with independent sections.
 
