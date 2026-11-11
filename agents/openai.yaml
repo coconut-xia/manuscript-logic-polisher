@@ -1,4 +1,4 @@
 interface:
-  display_name: "Manuscript Logic & Style"
-  short_description: "Confirm argument logic, learn exemplars, and polish manuscripts"
-  default_prompt: "Use $manuscript-logic-polisher to map and confirm my manuscript logic, learn style patterns from my exemplars, and produce a submission-ready revision."
+  display_name: "Logic Writing Skill"
+  short_description: "Polish argument flow, author voice, and terminology"
+  default_prompt: "Use $logic-writing-skill to improve this paper in my established Introduction-led style, check argument flow and terminology across the supplied files, preserve scientific meaning, and ask only about material scientific ambiguities or requested approvals."

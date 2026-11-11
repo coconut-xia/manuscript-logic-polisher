@@ -1,81 +1,89 @@
 # Revision and quality audit
 
-## Revision protocol
+## Pass 1: Argument
 
-### Structural pass
-
-- Follow the confirmed central claim and claim-evidence chain.
+- Recover the actual central claim and evidence chain.
 - Put prerequisites before dependent claims.
-- Keep observations distinct from interpretation and implications.
-- Remove content only when redundant or outside the confirmed argument; report substantive deletions.
-- Add author queries where a valid bridge requires unprovided scientific content.
+- In an Introduction, map each real gap to its proposed answer; an unmatched answer or overstated gap needs attention.
+- Explain why complementary comparisons or measurements are needed.
+- Distinguish observation, comparison, interpretation, causal mechanism, and implication.
+- Remove content only when redundant or outside scope; disclose substantive deletions.
+- Use the scoped confirmation rule in logic-and-confirmation.md for scientific decisions, not for routine wording.
 
-### Paragraph pass
+## Pass 2: Paragraph
 
-Assign each paragraph one rhetorical purpose. Check:
+For each changed paragraph identify:
+1. controlling purpose and technical concept;
+2. incoming premise or object from the preceding text;
+3. evidence, reasoning, or procedure that develops it;
+4. the bounded conclusion or outgoing handoff, when appropriate.
 
-1. The opening establishes the paragraph's role or logical connection.
-2. Every sentence advances that role.
-3. Evidence is adjacent to the claim it supports.
-4. Interpretation is calibrated to the evidence.
-5. The ending resolves the paragraph or prepares the next step.
+Merge fragments of one reasoning unit. Separate competing purposes. Not every paragraph requires all four elements in visible text, a final summary, or the same sentence pattern.
 
-Split paragraphs with competing purposes. Merge paragraphs whose fragments cannot stand independently.
+Check literature paragraphs by their evaluative criterion, not just completeness of citations. Check contribution paragraphs against the requirements established earlier.
 
-### Sentence pass
+## Pass 3: Sentence and voice
 
-- Prefer precise actors and actions.
-- Give each sentence one main communicative job; split independent claims or functions.
-- Choose short, medium, or selectively longer sentences according to rhetorical purpose, information dependency, and readability; never enforce mechanical alternation or a length quota.
-- Prefer claim-, relation-, or finding-led synthesis over chronological author-action narration, except when methodological sequence is necessary.
-- Replace vague pronouns and empty references with explicit concepts.
-- Remove throat-clearing, inflated novelty language, stacked modifiers, and redundant metadiscourse.
-- Use the derived terminology consistently.
-- Match tense to function and discipline convention.
-- Calibrate verbs: `shows` is stronger than `suggests`; `causes` requires more support than `is associated with`.
-- Preserve meaningful hedges and limitations.
-- Use a connector only when its logical function is demonstrable.
-- Avoid repetitive sentence-initial transitions and formulaic AI-sounding evaluations; apply `natural-academic-language.md` contextually rather than as a blind blacklist.
+- One controlling job per sentence; keep necessary coupled conditions.
+- Use clear subjects, precise verbs, and explicit referents.
+- Carry known information into new information.
+- Preserve scientific nouns while varying permissible discourse wording.
+- Use length for purpose, not a quota or forced alternation.
+- Replace detachable importance/praise with the actual property or consequence.
+- Use connectors only for real relations; a different adverb does not repair a missing relation.
+- Preserve warranted uncertainty and avoid repeated unnecessary disclaimers.
+- Keep Methods operational and SI reader-facing.
 
-## Evidence-preservation check
+## Pass 4: Conceptual and lexical consistency
 
-For each changed claim, compare original and revision for:
+Read terminology-and-consistency.md and use one project ledger.
 
-- direction of effect;
-- magnitude and units;
-- population, dataset, or boundary conditions;
-- statistical significance and uncertainty;
-- causal versus correlational force;
-- citation placement and scope;
-- equation variables and symbol definitions;
-- figure, table, appendix, and section references.
+Check across the full supplied family:
+- official names, full/short forms, acronyms and model variants;
+- representation, channel, resolution, unit, and index definitions;
+- dataset, split, sampling, and checkpoint roles;
+- metric, statistic, accepted population, and aggregation level;
+- measurement boundaries and computational cost definitions;
+- symbols and independent numbering systems.
 
-If meaning changed unintentionally, restore it. If a change is required by the confirmed logic, disclose it in the revision report.
+Do not call this pass complete solely because a lexical script found no watch forms. Resolve or report conflicting definitions.
 
-## Quality rubric
+## Pass 5: Evidence preservation
 
-Score each dimension as `pass`, `needs author input`, or `needs revision`.
+For every meaning-sensitive change, compare source and revision:
+- direction and magnitude of effect;
+- units and displayed precision;
+- comparison baseline and evaluated population/condition;
+- uncertainty and significance;
+- association versus causation;
+- citation placement and supported proposition;
+- equation terms, domains, and variable definitions.
 
-| Dimension | Pass condition |
-|---|---|
-| Central argument | One explicit, defensible central claim governs the manuscript |
-| Claim-evidence alignment | Each substantive claim has correctly scoped support |
-| Logical continuity | Prerequisites, contrasts, causes, and implications are explicit and valid |
-| Section function | Each section performs its intended rhetorical role |
-| Paragraph unity | Each paragraph has one controlling purpose and coherent progression |
-| Claim calibration | Wording does not exceed the strength or scope of evidence |
-| Cohesion | Transitions express real relations; terminology and references remain stable |
-| Sentence focus and rhythm | Each sentence has one main job; length and structure vary intentionally |
-| Natural academic voice | Prose is concrete and domain-specific, without generic AI-style framing or mechanical connectors |
-| Scholarly compression | Prose synthesizes the scientific point without conversational or chronological narration; necessary detail remains intact |
-| Exemplar fit | Applied style rules match the relevant field, article type, and section |
-| Language quality | Grammar, syntax, diction, concision, and readability meet publication norms |
-| Technical integrity | Data, citations, math, labels, and formatting are preserved |
-| Author voice | Revision is professional but not a generic imitation of exemplars |
-| Submission condition | No unresolved critical query or known journal-format violation remains |
+Do not silently change a protocol, assume a missing control, or upgrade a claim to make a paragraph close neatly. If scientific meaning must change, obtain the relevant decision and document it.
 
-Do not issue a blanket “submission-ready” judgment unless every critical dimension passes. Use “language-polished; author input still required” when evidence or reasoning queries remain.
+## Pass 6: Equations, references, and format
 
-## Revision report
+- Every display equation has grammatical ownership. Punctuation follows the sentence; neither colons nor "where" are compulsory.
+- Referenced definitions have an unambiguous number or locator.
+- Main text, SI, and response counters and corresponding source numbers match actual content.
+- Captions identify the plotted/measured object, panels, units, and necessary statistics.
+- Headers are readable and consistent; merged cells reflect real grouping.
+- Preserve citation keys, labels, macro arguments, equations, template typography, and functional comments.
+- Clean/marked conversion affects revision styling only; normal hyperlink colors and figure colors remain intact.
+- A formatting-only request must not alter scientific content.
 
-Summarize structural changes, paragraph-level changes, language/style changes, meaning-sensitive changes, unresolved queries, and final readiness. Include representative before/after examples only when useful; do not duplicate the entire manuscript.
+For LaTeX edits use the designated editor/compiler when available; fix actual errors and report the observed status. For DOCX/PDF follow the applicable render-and-inspect workflow. Do not conflate text checks, compilation, rendering, and journal compliance.
+
+## Delivery test
+
+Before delivery, ask:
+- Does the text sound like this author's problem-driven, concept-linked explanation?
+- Can a reader identify why each major paragraph follows the previous one?
+- Does each claim retain its actual evidence and boundary?
+- Are repeated scientific objects consistently named and defined?
+- Have any full-paper defaults leaked from the exemplar into an unrelated study?
+- Are the only pending questions genuinely scientific or requested by the author?
+
+Report outcomes as checked, needs author input, or unresolved. Do not invent a numeric style score or a blanket submission-ready claim.
+
+Return the requested artifact and a concise report. Provide detailed before/after or logic maps when requested or needed for an actual decision. Avoid burdening routine edits with a full audit dossier.

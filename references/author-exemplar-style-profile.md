@@ -1,98 +1,133 @@
-# Author exemplar style profile
+# Persistent author style profile
 
-## Status and weighting
+## Authority and provenance
 
-Treat this as a living profile, last updated 2026-07-16. Give both current exemplars equal, strong source-level weight. Section-specific application does not reduce either source's status; it prevents Methods or Supplementary conventions from being imposed mechanically on an Abstract or Discussion.
+Updated 2026-11-10 from explicit author corrections and the current author manuscript family, titled *Full-Stack UAV Detection Pipeline from Precise RGB-Event Sensing to Efficient Edge Processing*.
 
-Current evidence:
+The author explicitly identifies the Introduction as the section they wrote most intensively and the highest-value source for their own language and progressive reasoning. Use this as the primary author-voice anchor across future papers. The rest of the main text and SI provide section-specific technical-exposition evidence; they are not a reason to overwrite that voice.
 
-1. *Brain-inspired visual sensing–perception for open-world environments*, Nature Sensors (2026), DOI 10.1038/s44460-026-00095-3. Analyze the full main-article argument and prose.
-2. *Full-Stack UAV Detection Pipeline from Precise RGB-Event Sensing to Efficient Edge Processing*, author-polished main-text LaTeX. Treat its complete Abstract, Introduction, Results, Discussion, Methods, and captions as the primary author-voice exemplar.
-3. The corresponding author-polished Supplementary Information. Treat it as equally strong evidence for technical exposition, quantitative analysis, equations, captions, and implementation detail.
+The repository's earlier Nature Sensors exemplar remains secondary journal/field context. Its paper-specific facts and earlier equal-weight wording do not override the author's current explicit Introduction priority. No new scientific evidence is established by this profile.
 
-Give the Nature Sensors work and the author's full manuscript family equal, strong work-level weight. Within Introduction tasks, follow the user's explicit instruction to use the author-polished main-text Introduction as the author-voice anchor; this section-specific priority does not reduce how fully the other exemplars are learned.
+Authority order:
+1. Current task instructions and explicit author corrections.
+2. The author's deliberate Introduction language and argument habits.
+3. Approved section-specific practices from main text, SI, and responses.
+4. Compatible journal/field examples.
+5. Incidental constructions and automated surface statistics.
 
-Do not store the source PDF or full LaTeX corpus in Git. Keep only this derived profile and source provenance.
+Do not learn an acknowledged error as a preference. Examples include accidentally blackening normal hyperlinks during clean-version generation, a remaining formulaic opener, and unresolved numbering. The profile records the intended style, not a certification that every source sentence already complies.
 
-## Transfer principle
+## The portable signature
 
-Transfer argument architecture, sentence function, evidence calibration, and cohesion before isolated wording. The author's own polished sentences define voice, but generic phrases in any source must still pass the anti-template and evidence-specificity checks.
+The most characteristic pattern is **concept-anchored progression**:
+- name a specific task difficulty or unresolved issue;
+- unpack its cause, observable consequence, or scientific cost;
+- use the same concept to organize the relevant comparison;
+- derive a requirement;
+- answer that requirement with a design or contribution;
+- keep the resulting conclusion within its evidence.
 
-## Core voice
+This can span several paragraphs. It is not a compulsory sequence inside every paragraph. A new paper can have one gap, several linked gaps, no dataset contribution, no device deployment, or a different section order.
 
-- Maintain high information density. Center each sentence on a scientific relation, operation, observation, or bounded inference.
-- Give each sentence one primary communicative job. Retain linked conditions or qualifiers in the same sentence only when they define that job.
-- Prefer purpose-led, finding-led, or object-led openings over conversational chronology.
-- Preserve stable technical nouns across adjacent sentences. Do not substitute synonyms merely for variety.
-- State boundaries explicitly. Distinguish what the data establish from what a simulation, metric, or comparison cannot establish.
-- Use concrete mechanisms, measurements, and comparison targets instead of generic importance or novelty claims.
+## Operational voice rules
 
-## Sentence rhythm
+| Rule | What to do | Avoid |
+|---|---|---|
+| Specificity at entry | Start with the concrete problem, result, object, or relation relevant to the paragraph. | A detachable sentence saying why careful study or fair comparison matters. |
+| Concept continuity | Reuse the stable scientific noun when a sentence or paragraph develops it. | Synonym rotation that makes one object appear to become several. |
+| Visible reasoning | State the relation between observations, constraints, requirements, and design. | Adding "therefore" to conceal a missing premise. |
+| Synthesis | Group prior work by the criterion needed for the argument. | A list of papers followed by an unsupported global dismissal. |
+| Controlled contrast | Explain both what an approach preserves and what remains unresolved under specified conditions. | Describing all earlier work as uniformly inadequate. |
+| Evidence adjacency | Put a key comparison or evidence pointer close to its claim. | A broad claim separated from its support by unrelated detail. |
+| Selective detail | Retain what a reader needs to assess the point; route full protocols to the appropriate section. | Removing conditions to make a paragraph shorter, or reproducing an entire table in prose. |
+| Functional endings | End with the consequence, requirement, bounded inference, or bridge that the paragraph has earned. | An automatic importance/novelty slogan at the end of every paragraph. |
+| Directness with restraint | State real findings firmly and mechanisms at their supported strength. | Promotional certainty or repeated unnecessary disclaimers. |
+| Varied expression | Vary clause construction and reporting verbs where their meaning permits it. | The same sentence frame and connective in every paragraph. |
 
-Clean diagnostic statistics, used only as descriptive evidence:
+## Sentence construction
 
-| Exemplar | Median | Mean | P90 | Paragraph mean |
-|---|---:|---:|---:|---:|
-| Nature Sensors main-text blocks | 18 words | 19 words | 29 words | 4.0 sentences |
-| Author main-text Introduction | 21 words | 20 words | 27 words | 7.3 sentences |
-| Author main-text Results | 18 words | 19 words | 27 words | 6.9 sentences |
-| Author main-text Discussion | 18 words | 19 words | 26 words | 5.2 sentences |
-| Author main-text Methods | 17 words | 18 words | 27 words | 4.3 sentences |
-| Author-polished Supplementary Notes | 22 words | 23 words | 35 words | 2.5 sentences |
+Give each sentence one controlling scientific job. Linked conditions, a justified contrast, or tightly coupled qualifications may remain in the sentence. Split when it introduces an independent result, changes the referent, or starts a second reasoning step.
 
-Do not target these values mechanically. Use shorter sentences for a decisive result, boundary, or pivot; medium sentences for most claims and explanations; and longer sentences for one relationship with necessary conditions, variables, or contrasts. Never enforce alternating lengths.
+Prefer an identifiable scientific subject:
+- an evaluated model or material;
+- a measurement or representation;
+- a configuration or experimental condition;
+- a named result or interpretation;
+- "we" when describing a design choice or action.
 
-## Rhetorical organization
+Do not ban passive voice. Use it when the controlled operation or object is the focus. Do not replace readable verbs with stacked abstract nouns to sound scholarly. Check the verb-object collocation, not just the verb list: a representation may retain information, while a device remains limited by slow recovery. Do not create unnatural phrases such as a device retaining limitations merely to use a favored operation verb.
 
-### Abstract
+Maintain known-to-new flow. Carry a named object or established result forward, then introduce the new property, comparison, limitation, or design consequence. A bare "this" is acceptable when its antecedent is unmistakable; name the result when several antecedents compete.
 
-Prefer the compact move sequence: problem -> contrast or motivating principle -> proposed framework -> internal stages -> concrete instantiation -> principal results -> bounded contribution. Keep each move distinct and omit discovery chronology.
+Vary length by purpose. Short sentences establish direction, a result, or a boundary; medium sentences carry most explanations; longer sentences retain one relationship with necessary conditions. There is no sentence-length quota and no short-long alternation rule.
 
-### Introduction
+## Vocabulary and cohesion
 
-Read `author-introduction-style.md` and follow its seven-paragraph progressive narrowing. Use the Nature Sensors exemplar as a compatible high-impact journal reference, but preserve the author's own problem decomposition, paired limitation structure, contribution ordering, and system-level closure.
+Scientific nouns and definitions are invariants; discourse wording is flexible. A model's official name, a measured quantity, and its definition should remain stable. "reports", "compares", "quantifies", "measures", "retains", "reduces", and "remains" can vary with the actual action.
 
-### Technical and supplementary exposition
+Choose a connector after identifying the relation:
+- contrast/concession;
+- consequence;
+- specification;
+- complementary evidence;
+- prerequisite/dependency;
+- extension of scope.
 
-- Open a section or paragraph by naming its purpose, evaluated object, figure/table function, or technical problem.
-- Explain the conceptual reason for a metric or formulation before presenting the equation.
-- After an equation, define variables and then state what the quantity isolates, measures, or permits.
-- Describe a multi-stage procedure in true operational order; use `First`, `Second`, and `Third` only when the order matters.
-- For hardware or deployment details, report configuration -> measured outcome -> scope of the reported system-level quantity.
-- For synthetic experiments, state which physical behaviors are modeled, which non-idealities are omitted, and what claim the simulation is allowed to support.
+A repeated technical noun or parallel sentence structure can express the relation without an explicit connector. Do not replace every "together" with "collectively", or every "therefore" with "thus"; remove or reconstruct the weak relation.
 
-### Results and ablations
+Do not preserve generic phrases merely because they occur in the exemplar. Expressions equivalent to unspecified great potential, seamless integration, impressive improvement, or an importance-only conclusion need concrete content. Necessary technical terms are not forbidden words.
 
-Organize Results as a system evidence chain: benchmark and sensing fidelity -> coverage and modality characteristics -> model design -> cross-dataset and scenario performance -> controlled alignment sensitivity -> model- and system-level deployment. Within each block use evaluation purpose -> comparison setup -> quantitative result -> condition-specific interpretation. Report negative or qualified findings directly, including cases where one metric or modality does not improve. When several modules are compared, keep each metric and attributed function adjacent; reserve complementarity claims for joint evidence.
+## Evidence and numerical detail
 
-### Discussion and limitations
+Keep observation, comparison, interpretation, and causal mechanism distinguishable. Do not turn a diagnostic into a direct error measurement, a stabilized learning curve into proof of optimal training, or a multi-component comparison into an isolated causal attribution.
 
-Follow the author's six-part Discussion logic when relevant: integrated system contribution -> alignment as a prerequisite -> modality-specific fusion mechanisms -> synthetic-data boundary -> system-level runtime bottleneck -> limitations and future work. Reconnect engineering evidence to the conceptual framework, then state external-validity boundaries separately. Use `may`, `suggest`, or explicit future-work language when generalization has not been tested.
+Retain useful limitations once, where they affect interpretation. Avoid repeatedly defining the contribution through what it does not establish.
 
-### Methods
+Preserve the direction, reference, metric, units, and uncertainty of each result. Main text needs decisive numbers; SI needs complete relevant values and aggregation definitions. The author's preference to avoid tiny percentage-point gains in a cover letter is not a ban on numerical results in papers.
 
-Open each subsection with the object or procedure, then provide configuration, operation, and rationale. Define equations conceptually before or immediately after presentation; keep symbols, dimensions, and parameter choices adjacent. Use passive voice when the procedure or controlled condition is the focus, but use an explicit actor when a design decision or interpretation would otherwise be ambiguous.
+## Equations are grammatical components
 
-### Figure and table captions
+A displayed equation belongs to the surrounding sentence. Introduce the quantity or relation; choose punctuation according to how the sentence continues.
 
-Begin with a compact descriptive title. Follow with panel-specific statements in visual order. State what is plotted or measured before interpretation. Avoid reproducing the full Results discussion in the caption.
+Schematic patterns:
+~~~
+The residual is defined as
+r_i = x_i - x_hat_i,
+where x_i and x_hat_i denote ...
 
-## Cohesion and connectors
+The two quantities satisfy
+a = b + c.
+The second term accounts for ...
+~~~
 
-- Prefer explicit conceptual subjects and lexical continuity; a connector is optional when the relation is already clear.
-- Use purpose clauses such as `To evaluate...` or `To isolate...` to motivate a method or analysis.
-- Use figure/table anchors such as `As reported in...` only when the cited object directly supports the sentence.
-- Use `however`, `while`, `whereas`, and `although` for genuine contrast, boundary, or concession.
-- Use cause/consequence markers only for justified dependencies, not temporal succession or correlation.
-- Avoid repetitive paragraph openings with `Furthermore`, `Moreover`, `Additionally`, `Notably`, `Crucially`, or `Ultimately`.
+Both patterns are legitimate. A colon is optional when warranted by the actual introduction, not a default before every display. "Here" after a completed sentence is valid; "where" is not mandatory. Define symbols, indices, units, and interpretation nearby. Preserve the paper's numbering and actual source correspondence; never print an empty source tag.
 
-## Claim verbs and lexical discipline
+## Section-specific scope
 
-- Prefer precise functional verbs such as `reports`, `presents`, `quantifies`, `compares`, `preserves`, `suppresses`, `mitigates`, `isolates`, `yields`, `enables`, `remains`, and `reflects` when their objects make the action verifiable.
-- Use `demonstrates`, `validates`, or `confirms` only when the stated evidence directly tests the claim and its scope.
-- Use `suggests`, `indicates`, `is consistent with`, or a narrower factual statement for interpretations and mechanisms not directly isolated.
-- Avoid detachable AI-style claims such as `paves the way`, `holds great promise`, `underscores the importance`, `intricate interplay`, or unqualified `groundbreaking` and `transformative`.
+- Introduction: prioritize the author's gap-development and answer-mapping habits. Read the dedicated guide.
+- Results: lead readers through comparisons and their meaning, not a chronological inventory of author actions.
+- Methods: retain operational order, concrete settings, and the actual implementation.
+- Discussion: integrate results and design implications without repeating the full Results section.
+- SI: reader-facing technical exposition with reproducible boundaries and full statistical meaning.
+- Rebuttal: direct answer, necessary evidence, calibrated interpretation, actual revision location; polite but varied openings.
 
-## Update protocol
+Read section-and-si-style.md when working outside the Introduction.
 
-For every new exemplar, record its title or stable identifier, source role, section coverage, and user-specified weight. Compare it against this profile before modifying a rule. Increase confidence only when the new source supports the same pattern; retain section-specific disagreement rather than averaging incompatible conventions. Never overwrite the explicit equal-weight instruction for the two current exemplars without the user's approval.
+## Project settings that must not become universal style rules
+
+Keep the following in a paper's own contract or ledger:
+- the number of gaps, paragraphs, modules, datasets, or contributions;
+- official system/model/device names and acronym expansions;
+- whether a section is called main text, manuscript, appendix, or Supplementary Information;
+- numerical settings, labels, source equation numbers, and selected precision;
+- journal fonts, caption details, numbering, and highlight colors;
+- how much detail one particular reviewer needs;
+- submission-letter page limits or selection of headline metrics.
+
+Persistent formatting preferences include preserving the requested template, meaningful equation punctuation, readable captions and table headers, and removing only revision marks when producing a clean version. Respect venue or user overrides.
+
+## Update discipline
+
+Do not ask for these preferences again on each paper. Apply them, report material deviations when relevant, and ask only about a new scientific ambiguity or a changed instruction.
+
+Record each new source's role, section, and explicit author weight. Add a reusable rule only when an explicit instruction or recurring pattern supports it. Keep a one-paper observation provisional; an approved correction is stronger evidence than an uncorrected artifact.

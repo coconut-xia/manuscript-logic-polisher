@@ -1,67 +1,50 @@
-# Exemplar-derived style profile
+# Project style contract
 
-## Scope and provenance
+Use when a persistent project record is useful. The author's shared voice is already in the skill; this record stores the new paper's facts, choices, and exceptions.
 
-**Target journal/field:**
+## Current sources and scope
 
-**Article and section types:**
+- Authoritative manuscript and date/version:
+- Supporting main/SI/response files:
+- Requested section and permitted edit depth:
+- Destination and output format:
+- Locked text, scientific content, or formatting:
+- Journal/field conventions that differ from the persistent profile:
 
-**Exemplars analyzed:**
+## Argument map
 
-**Confidence and limitations:**
+- Problem and actual unresolved gap(s):
+- Central claim and supported boundary:
+- Gap-to-answer links and evidence locations:
+- Scientific decisions still requiring author input:
 
-## Rhetorical moves
+## Paragraph continuity
 
-| Section | Preferred move sequence | Strength | Basis | Misuse risk |
+| Paragraph/block | Controlling concept and function | Incoming premise | Development | Outgoing handoff |
 |---|---|---|---|---|
-| Abstract |  |  |  |  |
 
-## Cohesion and transitions
+Use for blocks needing repair, not as mandatory paperwork for every paragraph.
 
-| Function | Preferred realization | Typical position | Avoid |
-|---|---|---|---|
-| Contrast |  |  |  |
+## Terminology and definitions
 
-## Stance and claim calibration
+Use terminology-ledger-template.json for lexical diagnostics. Also record conceptual distinctions that require human review:
+- Measurement objects and boundaries:
+- Data split and checkpoint roles:
+- Metrics, units, aggregation levels, and uncertainty:
+- Symbol/full-name/short-name conventions:
+- Contradictions or unresolved definitions:
 
-| Claim type | Preferred strength/hedging | Notes |
-|---|---|---|
-| Observation |  |  |
+## Format contract
 
-## Syntax and information flow
+- Equation and reference numbering:
+- Figure/table/caption conventions:
+- Revision-highlight behavior:
+- Normal hyperlink/figure colors to preserve:
+- Compilation/rendering route:
 
-- Typical sentence-length range:
-- Preferred short/medium/long sentence functions:
-- One-main-job sentence boundary rules:
-- Paragraph progression:
-- Active/passive tendency:
-- Preferred grammatical subjects:
-- Old-to-new information pattern:
+## Exceptions and checks
 
-## Naturalness and anti-template rules
-
-- Repeated connectors to avoid:
-- Generic AI-sounding frames to avoid:
-- Preferred content-specific alternatives:
-- Legitimate domain terms that must not be falsely flagged:
-
-## Scholarly synthesis and compression
-
-- Preferred claim/finding-led structures:
-- Section-specific tolerance for chronological narration:
-- Information that must remain explicit:
-- Redundant setup or author-action frames to compress:
-
-## Terminology and lexical preferences
-
-| Concept/function | Preferred term or construction | Avoid | Scope |
-|---|---|---|---|
-|  |  |  |  |
-
-## Author-compatible style rules
-
-1.
-
-## Provisional single-exemplar features
-
-1.
+- Explicit author overrides:
+- Applied profile version:
+- Scope actually checked:
+- Unresolved items:

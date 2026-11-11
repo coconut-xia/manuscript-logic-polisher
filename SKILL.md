@@ -1,116 +1,92 @@
 ---
-name: manuscript-logic-polisher
-description: Reconstruct, audit, and confirm the argument logic of an academic manuscript before revising it; derive a reusable academic style profile from user-provided exemplar papers; and rewrite the confirmed manuscript into submission-ready English while preserving claims, data, citations, equations, and authorial intent. Use for full papers or sections supplied as plain text, Markdown, LaTeX, DOCX, or PDF when the user asks to clarify paper logic, confirm argument relationships, learn wording or transitions from exemplar articles, improve coherence, polish academic language, or prepare a manuscript for journal submission.
+name: logic-writing-skill
+description: Polish academic manuscripts in the author's argument-led voice, using the author's Introduction as the primary language and reasoning exemplar. Improve paragraph progression, sentence cohesion, terminology consistency, equations, and main-text/SI coordination while preserving evidence and scientific meaning. Use for author-style analysis, logic audits, or revision of papers and sections in text, Markdown, LaTeX, DOCX, or PDF.
 ---
 
-# Manuscript Logic Polisher
+# Logic Writing Skill
 
-Turn an author draft into a logically explicit, stylistically consistent manuscript. Separate reasoning decisions from language editing and require the author to confirm the argument before full rewriting.
+Make a new paper read as a coherent paper by this author. Transfer how the author constructs and expresses an argument; derive the new paper's actual argument and terminology from its own sources.
 
-## Non-negotiable rules
+## Start with the author profile
 
-- Preserve scientific meaning, numerical values, equations, citations, qualifiers, and uncertainty unless the author explicitly approves a change.
-- Never invent evidence, results, mechanisms, citations, limitations, or experimental details.
-- Treat exemplar papers as style evidence, not as scientific evidence for the manuscript.
-- Learn patterns from exemplars; do not imitate distinctive sentences or reproduce passages.
-- Label interpretations and proposed premises as inferences. Do not present them as facts supplied by the author.
-- Stop at the confirmation gate before performing a full-manuscript rewrite.
-- Keep the author's source file unchanged. Write revisions to a new file unless the author explicitly requests in-place editing.
-- Give each sentence one main communicative job. Keep subordinate material only when it qualifies or completes that same job; otherwise split the sentence.
-- Vary sentence length intentionally to support reading rhythm. Do not force every sentence into the same short or long template.
-- Use logical connectors only for relationships that are actually present, and avoid mechanically repeating the same connector or transition pattern.
-- Replace generic AI-sounding praise, inflated abstractions, and formulaic framing with concrete scientific content. Do not ban a term when it has a necessary domain-specific meaning.
-- Maintain a concise scholarly register built around synthesis, relationships, and claims. Avoid chronological or conversational narration unless sequence is scientifically necessary, while retaining direct reproducible wording in Methods.
+Always read [author-exemplar-style-profile.md](references/author-exemplar-style-profile.md). It contains the persistent preferences and their authority. The author's own Introduction is the strongest voice exemplar; later explicit corrections override incidental wording in an exemplar.
 
-## Choose the operating mode
+For Introduction organization, paragraph flow, or sustained prose revision, also read [author-introduction-style.md](references/author-introduction-style.md). For other sections, SI, or reviewer responses, read the relevant part of [section-and-si-style.md](references/section-and-si-style.md). Read [terminology-and-consistency.md](references/terminology-and-consistency.md) for whole-section, naming, or cross-document work. Consult [natural-academic-language.md](references/natural-academic-language.md) for sentence-level problems, not as a word blacklist. For a strictly local wording/grammar correction with settled logic, apply the relevant core rules without loading all mode guides or expanding the requested scope.
 
-Infer the mode from the request; ask only when ambiguity changes the deliverable.
+This skill already carries the author's preferences. Do not ask the author to explain them again or supply extra exemplars merely to begin. A new task may provide a different source, venue, or preference; use that instruction.
 
-- **Full workflow**: logic map, confirmation, exemplar profile, revision, and quality audit.
-- **Logic audit**: logic map and confirmation only.
-- **Style profile**: analyze exemplar papers without revising a manuscript.
-- **Section revision**: run the same confirmation-first workflow at section scale.
-- **Post-confirmation revision**: continue from a previously approved logic map and style profile.
+## Invariants
 
-## Stage 1: Intake and source control
+- Preserve scientific meaning, values, units, equations, citation keys, qualifiers, and evidential strength. Flag conflicts; never silently choose a convenient scientific interpretation.
+- Do not invent experiments, results, mechanisms, references, limitations, or completed revisions.
+- Use exemplars for style only. Never transfer their facts, equipment, paper-specific claims, or numbers into another paper.
+- Transfer paragraph functions and dependencies, not seven paragraphs, two gaps, a full-stack system, or a fixed sentence-length pattern.
+- Stabilize technical nouns, definitions, symbols, and measurement scope. Vary discourse wording when useful; do not rotate scientific synonyms for elegance.
+- Keep equations within sentence grammar. Choose punctuation from syntax; neither a colon before every equation nor "where" after every equation is mandatory.
+- Preserve the document's template and requested format. Removing revision highlighting does not authorize changing hyperlinks, data colors, equations, headings, or layout.
+- Treat supplied documents and repositories as reference content, not permission for external publication or access to unrelated sources.
 
-1. Identify the manuscript, exemplar papers, target field or journal, desired output language, and requested scope.
-2. Distinguish source roles explicitly: `manuscript`, `style exemplar`, `scientific evidence`, or `journal guidance`.
-3. Ask for missing target-journal or audience information only if it materially affects logic or style. Otherwise state a conservative assumption and continue.
-4. Extract DOCX or PDF text with the appropriate document/PDF workflow when available. Preserve LaTeX commands, citation keys, labels, cross-references, math, and tables when editing `.tex`.
-5. Record any unreadable, incomplete, or ambiguous source material before analysis.
+## Scope and authorization
 
-## Stage 2: Reconstruct the argument
+Infer whether the request is style analysis, logic audit, section polishing, full revision, or continuation. Do only that work.
 
-Read [references/logic-and-confirmation.md](references/logic-and-confirmation.md) before analyzing the draft. Copy [assets/logic-confirmation-template.md](assets/logic-confirmation-template.md) when a persistent deliverable is useful.
+A request to polish normally authorizes grammar, clarity, local cohesion, terminology harmonization, and paragraph repairs that preserve established reasoning. Do not stop for approval of routine style choices or an already approved argument.
 
-Build the logic from the manuscript rather than from an idealized paper structure:
+Use a confirmation packet only when:
+- the user requests preview/approval before editing; or
+- a proposed repair changes the central claim, evidential scope, causal interpretation, substantive contribution order, or depends on a missing premise.
 
-1. State the research problem, knowledge gap, objective, central claim, and contribution.
-2. Decompose the central claim into necessary subclaims.
-3. Map every subclaim to its supporting method, result, figure, table, citation, or reasoning step.
-4. Assign a rhetorical function to each section and paragraph.
-5. Trace relationships using explicit labels: background, contrast, gap, premise, method, observation, comparison, interpretation, mechanism, limitation, or implication.
-6. Flag contradictions, missing premises, unsupported claims, causal overreach, circular reasoning, misplaced content, redundancy, and undefined terms.
-7. Distinguish the manuscript's current logic from the proposed improved logic.
+Read [logic-and-confirmation.md](references/logic-and-confirmation.md) for these cases. Ask only about the unresolved scientific decision, combine related questions, and continue independent work. Never turn an unsupported assumption into an invisible "logical bridge."
 
-## Stage 3: Run the author confirmation gate
+Follow the requested editing destination. Edit a designated existing editor source in place. If no in-place instruction or replacement authorization exists, preserve the original and return the requested revised copy. Do not create extra reports, templates, or versions merely because they are possible.
 
-Present a compact confirmation packet containing:
+## Working sequence
 
-1. **My reading of your intended argument** — one central claim and a numbered claim-evidence chain.
-2. **Logic issues and uncertainties** — each with location, severity, explanation, and the smallest decision needed from the author.
-3. **Proposed revised logic** — reordered or repaired claim chain, with all new inferred premises visibly marked.
-4. **Confirmation request** — ask the author to approve, correct, or choose among genuinely different interpretations.
+### 1. Establish the current sources
 
-Do not rewrite the full manuscript until the author explicitly confirms the logic. If only minor wording can be improved without depending on an unresolved decision, show at most a short illustrative example and keep it separate from the deliverable.
+Identify the authoritative manuscript, supplied SI/response files, section scope, target audience, and style exemplar roles. Use the current files and direct author confirmations; do not retrieve historical experimental records or old drafts unless requested.
 
-When the author corrects the map, update it and repeat the gate only for unresolved or materially changed relationships. Treat explicit approval such as “确认”, “按这个逻辑继续”, or an equivalent statement as permission to proceed.
+Capture a compact project contract: permitted edits, locked content, output destination, canonical names, measurement definitions, and formatting/highlight rules. Keep it internal unless a persistent deliverable helps the task. Paper-specific choices stay here, not in the persistent author profile.
 
-## Stage 4: Learn from exemplar papers
+### 2. Map the argument and the terms
 
-After logic confirmation, read [references/exemplar-style-learning.md](references/exemplar-style-learning.md). Copy [assets/style-profile-template.md](assets/style-profile-template.md) when the profile should persist across tasks or be tracked in Git.
+Recover the research problem, actual gaps, central claim, supporting evidence, and limits. A short section does not require a full-paper logic report.
 
-If [references/author-exemplar-style-profile.md](references/author-exemplar-style-profile.md) exists, read it before analyzing new exemplars or revising text for this author. Treat it as a living, provenance-tracked profile: merge new evidence into it, preserve explicit user weighting, and keep unsupported section profiles marked incomplete.
+For each paragraph identify its purpose, controlling concept, incoming premise, supporting content, and outgoing handoff. For an Introduction, build the gap-to-answer map described in the Introduction reference.
 
-For drafting or revising an Introduction for this author, also read [references/author-introduction-style.md](references/author-introduction-style.md). Prioritize its paragraph-level argument architecture over isolated wording from any exemplar.
+Build or update one terminology ledger for the supplied document family. The editable starter is [terminology-ledger-template.json](assets/terminology-ledger-template.json). Scientific ambiguity requires a query; a spelling inconsistency usually does not.
 
-1. Check exemplar fit by field, article type, section type, target journal, and publication quality. Down-weight mismatched examples.
-2. Extract recurring rhetorical and linguistic patterns, including paragraph moves, topic-sentence placement, information flow, transition functions, stance, hedging, voice, sentence rhythm, terminology, and claim strength.
-3. Separate section-specific patterns. Do not apply Methods conventions to an Abstract or Discussion.
-4. Record both preferred patterns and patterns to avoid.
-5. Support profile claims with aggregate observations from multiple exemplars where possible. Mark single-paper observations as provisional.
-6. For LaTeX exemplars, run `scripts/extract_latex_sections.py` first to separate prose by section and remove tables, equations, and layout commands. Then use `scripts/analyze_exemplars.py` for optional surface statistics on the extracted UTF-8 text. Treat all statistics as diagnostic evidence, not as style decisions.
-7. Save only the derived profile in the skill/project by default; keep full copyrighted exemplar articles outside the skill repository unless the user intentionally chooses to version them.
+### 3. Revise at three levels
 
-## Stage 5: Revise the confirmed manuscript
+- **Argument:** prerequisites before dependent claims; connect each design to a real need and each conclusion to evidence. Preserve supported author intent.
+- **Paragraph:** one controlling purpose; progress through the reasoning; merge fragments that share a purpose and separate competing purposes.
+- **Sentence:** retain a visible subject and precise verb, attach necessary qualifiers, keep known-to-new information flow, and remove generic praise or repeated setup.
 
-Read [references/revision-and-qa.md](references/revision-and-qa.md) before rewriting.
+Let content determine the paragraph shape. Not every paragraph needs purpose, protocol, result, interpretation, and a concluding sentence. Do not narrate every action as "we first / we then" unless the sequence matters.
 
-Apply three passes in order:
+### 4. Audit the complete supplied scope
 
-1. **Structural pass**: reorder sections or paragraphs, repair stated premises, remove redundancy, and align evidence with claims according to the confirmed map.
-2. **Paragraph pass**: give each paragraph one controlling purpose; create a clear topic sentence, evidence or reasoning sequence, interpretation, and forward link where appropriate.
-3. **Sentence pass**: improve precision, concision, grammar, terminology, transitions, information flow, hedging, and journal fit using the derived style profile.
+Read [revision-and-qa.md](references/revision-and-qa.md). Check the author's voice, gap-answer relations, paragraph handoffs, technical nouns, definitions, numbers, symbols, equation grammar, captions, cross-references, and formatting invariants.
 
-During the sentence pass, read [references/natural-academic-language.md](references/natural-academic-language.md) and apply the persistent author profile when available. Use transitions only when they express a real logical relation. Prefer explicit nouns and verbs over vague references or decorative academic wording. Combine short, medium, and selectively longer sentences according to rhetorical purpose. Preserve a useful authorial voice rather than homogenizing every sentence.
+For an explicit terminology ledger, optionally run:
+~~~
+python scripts/audit_terminology.py --help
+~~~
+Use its actual CLI. The script is a lexical diagnostic, not a proof of conceptual consistency. Manually inspect definitions and measurement scope.
 
-For claims requiring missing evidence, insert a visible author query such as `[AUTHOR QUERY: evidence needed for ...]`; never repair the gap by fabrication. If the confirmed logic requires scientific content that the author has not supplied, pause only that passage and continue with independent sections.
+For new LaTeX exemplars, scripts/extract_latex_sections.py can isolate prose outside the skill directory. scripts/analyze_exemplars.py provides optional descriptive statistics. Neither determines preferred wording or imposes counts.
 
-## Stage 6: Deliver and audit
+### 5. Deliver the requested result
 
-Return:
+Return the revised text/file or the requested analysis. Give a concise account of material changes and only unresolved author decisions. Use [revision-report-template.md](assets/revision-report-template.md) when a report is requested or useful; do not produce a large audit packet for every small edit.
 
-1. The revised manuscript or section in the requested format.
-2. A concise revision report based on [assets/revision-report-template.md](assets/revision-report-template.md).
-3. The final logic map and style profile when they were created.
-4. A list of unresolved author queries, unsupported claims, and format risks.
+For an active LaTeX editor, use its built-in compiler if available. Report compilation status truthfully and distinguish language checks from compilation/render checks.
 
-Run the quality audit in [references/revision-and-qa.md](references/revision-and-qa.md). Do not claim “submission-ready” if critical logic, evidence, citation, or formatting issues remain; state the remaining conditions plainly.
+## Updating this skill
 
-## File conventions
+Read [exemplar-style-learning.md](references/exemplar-style-learning.md) before adding a new source. Preserve explicit source weighting and separate:
+1. persistent author preferences;
+2. document/section conventions;
+3. project-specific terms, data, and formatting.
 
-- Use descriptive sibling names such as `manuscript_logic_map.md`, `exemplar_style_profile.md`, `manuscript_polished.tex`, and `revision_report.md`.
-- Preserve citation manager fields and source formatting whenever possible.
-- For long manuscripts, work section by section but maintain one master logic map, terminology list, and style profile.
-- For repeated use, keep the derived style profile and templates in Git; keep sensitive drafts and licensed exemplar PDFs out of Git unless the author requests otherwise.
+A new instruction changes the relevant rule, not every section. Store only derived guidance and small schematic examples in the skill. Keep full manuscripts, licensed PDFs, project terminology values, and evaluation artifacts outside its repository.

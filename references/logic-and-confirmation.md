@@ -1,95 +1,51 @@
-# Logic reconstruction and confirmation
+# Logic reconstruction and scoped confirmation
 
-## Purpose
+## Recover the actual argument
 
-Recover the author's actual argument, expose uncertainty, and obtain approval before language polishing makes an unconfirmed argument sound deceptively certain.
+Identify the problem, gap(s), objective, central claim, contribution, and supported boundary. Use the current manuscript and direct author evidence. Do not invent an idealized argument and then write it as the author's intent.
 
-## Build the map
+For each substantive claim, record when needed:
+- its role: premise, validity check, observation, comparison, interpretation, mechanism, implication, or limitation;
+- supporting method, result, figure/table, citation, or explicit reasoning;
+- relation to adjacent claims: supports, qualifies, contrasts, depends on, or follows from;
+- location and status: supported, ambiguous, missing evidence, or author decision required.
 
-### Manuscript-level fields
+The map can be internal and compact. A short polish request does not require a large form.
 
-- **Problem**: What real or theoretical problem motivates the work?
-- **Gap**: What is unknown, inadequate, inconsistent, or unavailable?
-- **Objective**: What does this study attempt to establish, create, compare, or explain?
-- **Central claim**: What single proposition should a reader accept after reading the paper?
-- **Contribution**: What changes for the field if the central claim is accepted?
-- **Boundary**: Under what conditions is the claim supported, and where does it stop?
+## Diagnose and repair
 
-### Claim-evidence record
+Check for missing premises, causal overreach, unsupported generalization, evidence mismatch, contradictions, shifting terms, circular justification, duplicated paragraph functions, and implications presented as observations.
 
-For each claim, record:
+Use the smallest sound repair:
+1. clarify an existing relation;
+2. reorder established content;
+3. separate observation from interpretation;
+4. remove true redundancy;
+5. propose a scope correction or ask for missing scientific information.
 
-| Field | Meaning |
-|---|---|
-| ID | Stable identifier such as C1 or C2.1 |
-| Claim | The proposition asserted by the manuscript |
-| Role | Premise, method validity, result, interpretation, mechanism, comparison, limitation, or implication |
-| Evidence | Result, figure, table, equation, citation, method, or reasoning step |
-| Relation | Supports, qualifies, contrasts, depends on, explains, or follows from |
-| Location | Section/paragraph or source line when available |
-| Status | Supported, partially supported, unsupported, ambiguous, or author decision required |
+An existing but implicit relation can be made explicit only when the manuscript supports it. Do not call an invented premise a transition.
 
-Do not equate temporal sequence or correlation with causation. Do not treat a citation as support without checking what proposition the manuscript assigns to it.
+## Decide whether to ask
 
-## Diagnose breaks
+**Proceed within the authorized scope** for grammar, local clarity, paragraph merging, lexical consistency, and reordering that preserves established dependencies. Use an already approved map without seeking the same approval again.
 
-Use four severities:
+**Obtain the relevant decision first** if:
+- the user requested preview/approval before editing;
+- two plausible scientific interpretations would produce different revisions;
+- the repair changes the central claim, causal force, evidence scope, or substantive contribution order;
+- a necessary measurement, method, or premise is absent.
 
-- **Critical**: The central conclusion does not follow, contradicts evidence, or requires absent evidence.
-- **Major**: A subclaim is unsupported, a necessary premise is missing, or ordering obscures the argument.
-- **Moderate**: Paragraph function, transition, definition, or scope is unclear but recoverable.
-- **Minor**: Redundancy or local wording masks an otherwise sound relationship.
+Severity alone does not require blocking the entire task. A contained unresolved passage can remain unchanged while independent sections are improved.
 
-Name the defect precisely:
+## A useful confirmation packet
 
-- missing premise;
-- unsupported generalization;
-- causal overreach;
-- claim-evidence mismatch;
-- contradiction;
-- scope drift;
-- undefined or shifting term;
-- circular justification;
-- result/interpretation conflation;
-- motivation presented after its dependent claim;
-- duplicated function;
-- implication stated as observation.
+Show only the material decision:
+- current reading and source location;
+- proposed repair and its effect;
+- any inferred premise, scope reduction, or missing evidence;
+- a concrete before/after passage when possible;
+- a concise request to choose or confirm.
 
-## Propose repairs
+For a genuinely ambiguous full argument, also provide the central claim and claim-evidence chain. Mark preserved content, inferences, narrowed claims, and queries. The optional template is [logic-confirmation-template.md](../assets/logic-confirmation-template.md).
 
-Prefer the smallest repair that makes the chain valid:
-
-1. Reorder existing content.
-2. Make an implicit but clearly supported premise explicit.
-3. Narrow or qualify the claim.
-4. Move interpretation away from observation.
-5. Request missing evidence or an author decision.
-
-Never add an unprovided mechanism, result, or citation as a repair. Label any reconstructed intent with `Inference:`.
-
-## Confirmation packet format
-
-Keep the packet short enough for a meaningful author decision.
-
-### A. Intended argument
-
-State the central claim in one sentence, followed by a numbered chain:
-
-`C1 evidence -> C2 interpretation -> C3 consequence -> central claim`
-
-### B. Decisions required
-
-List only decisions that change the argument. For each, include the current reading, alternative reading, consequence, and recommended option with rationale.
-
-### C. Proposed logic
-
-Show the revised section order and claim-evidence chain. Mark:
-
-- `[PRESERVED]` for an explicit author claim;
-- `[INFERRED]` for a proposed implicit premise;
-- `[NARROWED]` for a claim whose scope is reduced;
-- `[QUERY]` for information only the author can supply.
-
-### D. Approval request
-
-Ask the author to confirm the central claim, claim order, and all `[INFERRED]` items. Do not ask them to approve grammar or stylistic details at this stage.
+Do not ask for approval of routine grammar, preferred style already stored in this skill, or unchanged relationships. After author corrections, repeat the gate only for remaining or materially changed scientific decisions.

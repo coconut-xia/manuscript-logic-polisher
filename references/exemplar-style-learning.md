@@ -1,89 +1,48 @@
-# Exemplar-based academic style learning
+# Exemplar learning and author-priority transfer
 
-## Principle
+## Source roles
 
-Build a project-specific style specification from observable patterns. This is analysis and guided transfer, not model fine-tuning. Transfer rhetorical functions and aggregate language tendencies, not distinctive wording.
+Separate:
+- current manuscript and author confirmations: scientific facts and intended claims;
+- author-written exemplar: voice and argument habits;
+- section-specific main text/SI: relevant exposition practices;
+- external journal examples: field/venue compatibility;
+- explicit user preferences: instructions that outrank incidental sample wording.
 
-## Select and weight exemplars
+The author has identified their own Introduction as the strongest voice source. Do not reset this priority to equal weighting or demand additional exemplars before doing useful work. Another explicit priority can update it.
 
-Rank each exemplar on:
+## What to learn
 
-1. Same research field and audience.
-2. Same article type: research article, methods paper, review, perspective, or letter.
-3. Same section type as the text being revised.
-4. Same target journal or a closely comparable journal.
-5. Similar methodological and evidential culture.
+Learn the function and operation of a pattern:
+- how a task difficulty becomes a requirement;
+- how closest literature is grouped and evaluated;
+- how a gap is developed and answered;
+- how subjects and technical nouns carry information between sentences;
+- how paragraphs pass an unresolved object or established result forward;
+- how observation, interpretation, mechanism, and scope are distinguished;
+- how sentence length serves a reasoning job.
 
-Use at least three comparable exemplars when available. If only one is supplied, describe the profile as provisional and avoid treating idiosyncrasies as journal rules.
+Do not copy memorable phrases, exact paragraph counts, gap counts, model names, data, devices, or a system architecture. Preserve words that are proper terms, not generic praise that happens to occur in the source.
 
-## Extract patterns by dimension
+## A rule record
 
-### Rhetorical organization
+For substantial updates, record:
+- pattern and actionable decision;
+- source role/section;
+- authority: explicit author requirement, recurring supported tendency, or provisional single-source observation;
+- where the rule applies;
+- an example of intended use and a misuse/exception.
 
-- order of moves within Abstract, Introduction, Results, Discussion, and Conclusion;
-- location and directness of the research gap;
-- how objectives, contributions, limitations, and implications are introduced;
-- whether paragraphs move general-to-specific, evidence-to-interpretation, or comparison-to-explanation.
+Use assets/style-profile-template.md when a separate profile is actually useful. Do not repeatedly rewrite the persistent profile from scratch.
 
-### Cohesion and transitions
+## Processing and statistics
 
-Classify transitions by function rather than word list:
+For a new LaTeX exemplar, scripts/extract_latex_sections.py separates prose and captions. Keep its full extracted text outside the skill repository. For other formats use the appropriate document/PDF reader.
 
-- addition;
-- contrast or concession;
-- cause or consequence;
-- evidence or example;
-- comparison;
-- temporal or procedural sequence;
-- reformulation;
-- limitation;
-- implication.
+Optional scripts/analyze_exemplars.py statistics can reveal monotony or clause density. They are descriptive diagnostics, not word-count targets or proof that a construction is the author's preference. One deliberate user correction can outweigh a frequency count.
 
-Record where an explicit connector is typical and where lexical continuity or sentence structure carries the relation. Avoid inserting connectors into relationships that are not logically present.
+## Provenance and privacy
 
-### Stance and claim calibration
+Keep a source identifier, section coverage, explicit author weighting, and derivation date. Do not put full unpublished drafts, complete licensed articles, or project experimental records in the reusable skill by default.
 
-Record how exemplars distinguish observation, interpretation, mechanism, and speculation. Track hedging, confidence, attribution, limitations, and the treatment of negative or non-significant findings.
-
-### Syntax and information flow
-
-Record approximate sentence-length range, clause density, active/passive balance, subject choice, old-to-new information flow, paragraph length, and variation in sentence openings.
-
-### Lexis and terminology
-
-Record preferred domain terms, reporting verbs, comparison verbs, evidence verbs, evaluative adjectives, nominalization density, abbreviations, and phrases to avoid. Prefer stable terminology over superficial variation.
-
-## Derive the profile
-
-For every profile rule, record:
-
-- the pattern;
-- section scope;
-- strength: strong, moderate, or tentative;
-- aggregate basis: number of exemplars or corpus statistic;
-- application guidance;
-- exception or misuse risk.
-
-Separate three categories:
-
-1. **Journal/field convention** — repeated across comparable exemplars.
-2. **Author-compatible preference** — improves fit without erasing the author's voice.
-3. **Single-exemplar feature** — provisional and not automatically transferred.
-
-## Copyright and provenance
-
-- Do not store full exemplar text in the skill by default.
-- Do not reproduce memorable sentences or extended passages.
-- Quote only short fragments when necessary to explain a pattern, identify the source, and prefer paraphrase.
-- Generic academic collocations may be recorded, but never assemble a revision by patchwriting source phrases.
-- Keep a list of exemplar filenames or citations used to derive the profile so the analysis is auditable.
-
-## Optional corpus analysis
-
-Run:
-
-```bash
-python3 scripts/analyze_exemplars.py article1.txt article2.md article3.tex --format markdown
-```
-
-The script measures surface features such as sentence length, paragraph size, transition categories, hedges, boosters, first-person usage, and a rough passive-voice proxy. Manually interpret every result in context; small corpora and formula-heavy LaTeX can distort counts.
+Apply this existing profile to future papers without asking the author to reteach it. Update only the relevant rule when new explicit feedback arrives. Do not turn a one-off formatting fix or a particular reviewer request into a universal instruction.

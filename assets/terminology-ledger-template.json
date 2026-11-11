@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "terms": [],
+  "concept_checks": [],
+  "_instructions": "Copy this file for a paper. Populate terms and concept_checks from that paper's current sources. The examples below are illustrative only and are not active audit rules. An empty terms list does not establish consistency.",
+  "_examples": {
+    "term": {
+      "id": "method.name",
+      "canonical": "Vector Encoder",
+      "allowed_forms": [
+        "Vector Encoder",
+        "VE"
+      ],
+      "watch_forms": [
+        {
+          "form": "VectorEncoder",
+          "suggestion": "Vector Encoder",
+          "reason": "Review the spelling of the established method name."
+        }
+      ],
+      "case_sensitive": true,
+      "scope": {
+        "files": [
+          "*.tex",
+          "*.md",
+          "*.txt"
+        ],
+        "exclude_files": [
+          "references/*"
+        ]
+      }
+    },
+    "concept_check": {
+      "id": "timing.boundary",
+      "concept": "inference latency",
+      "reference_definition": "The current paper's explicitly stated measurement start, end, and included operations.",
+      "locations_to_compare": [
+        "Methods",
+        "Results",
+        "SI measurement protocol",
+        "table caption"
+      ],
+      "review_question": "Does every occurrence use the same endpoints, or are distinct quantities explicitly named?"
+    }
+  }
+}
